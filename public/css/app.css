@@ -10855,3 +10855,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.my-card {
+  background-color: aquamarine;
+  padding: 20px;
+  margin-bottom: 20px;
+}
