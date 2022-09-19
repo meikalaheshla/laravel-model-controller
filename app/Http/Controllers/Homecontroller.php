@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Movie;
 
 class Homecontroller extends Controller
 {
-    public function index(){
-        return view('home');
+    public function index()
+    {
+        $movies = Movie::all();
+
+        return view('home', compact('movies'));
     }
 }
